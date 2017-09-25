@@ -13,13 +13,18 @@ public void clickOnGmail()
 {
 	WebDriverWait wait= new WebDriverWait(driver, 15);
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("gb_P"))).click();
+
+	System.out.println("This is branch2");
+
 	System.out.println("This is branch1");
+
 	
 	
 }
 
 public void clickCreateAccount()
 {
+	System.out.println("This is branch2");
 	
 	WebDriverWait wait= new WebDriverWait(driver, 10);
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("CREATE AN ACCOUNT"))).click();
